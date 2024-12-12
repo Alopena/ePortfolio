@@ -22,7 +22,7 @@ Font Awesome: For social media icons and other vector icons.
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/your-portfolio-repo.git
+git clone https://github.com/Alopena/ePortfolio.git
 
 2. Navigate to the project directory
 
