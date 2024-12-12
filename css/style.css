@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white; 
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #1E90FF;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+nav {
+    z-index: 101;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #1E90FF; 
+    border-bottom: 3px solid #1E90FF;
+}
+@media(max-width:995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #1E90FF;
+        border-bottom: 3px solid #1E90FF;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #1E90FF;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #00008B; 
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #1E90FF; 
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #1E90FF;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #1E90FF; 
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #1E90FF; 
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #1E90FF;
+    box-shadow: 0 0 25px #1E90FF;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #1E90FF; 
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #1E90FF; 
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #1E90FF;
+    color: black;
+    box-shadow: 0 0 25px #1E90FF;
+}
+
+
+#about {
+    padding: 5rem 9%;
+    background-color: #ADD8E6; 
+    color: white;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#about h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1E90FF; 
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.about-item {
+    flex: 1;
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 10px;
+    max-width: 33%;
+    min-height: 250px;
+}
+
+.about-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1E90FF; 
+}
+
+.about-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-item ul li {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: white;
+}
+
+.about-item ul li::before {
+    content: "\2022";
+    color: #1E90FF; 
+    padding-right: 0.5rem;
+}
+
+.about-item p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: white;
+}
+
+
+#projects {
+    padding: 5rem 9%;
+    background-color: #00008B; 
+    color: white;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1E90FF; 
+}
+
+#projects p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    max-width: 30%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center; 
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    color: #1E90FF; 
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6rem;
+}
+
+.project-link {
+    margin-top: auto;
+    font-size: 1.4rem;
+    color: #1E90FF; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #1E90FF;
+    color: black;
+    border-radius: 5px;
+}
+/* Contact Section Styling */
+#contact {
+    padding: 5rem 9%;
+    background-color: #ADD8E6; /* Light blue for contact */
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1E90FF; /* Blue color for contact heading */
+}
+
+#contact p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 2rem; /* Adds spacing between the icons */
+    margin-bottom: 3rem; /* Space below social icons */
+}
+
+.social-icons a {
+    font-size: 3rem; /* Makes the icons larger */
+    color: #1E90FF; /* Blue color for icons */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #104E8B; /* Darker blue on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1E90FF;
+    font-size: 1.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1E90FF;
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #104E8B;
+    transform: scale(1.03);
+}
+
+/* Email Info Styling */
+.email-info {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.email-info i {
+    font-size: 2rem;
+    color: #1E90FF; /* Blue email icon */
+}

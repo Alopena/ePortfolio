@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Angelbert</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="image/Picture.jpg" alt="My Picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Angelbert</span></h1>
+            <h3 class="typing-text">A Computer Science Student</h3>
+            <p>Currently a Third Year Computer Science</p>
+            <a href="#" class="btn">Bachelor of Science in Computer Science Major in Genshin Impact </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-item background">
+                <h3>Background</h3>
+                <p>Hello! I'm Angelbert, a Computer Science student at the University of Science and Technology of Southern Philippines.</p>
+            </div>
+    
+            <div class="about-item skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Intermediate proficiency in Python, C++, CSS, JavaScript, and HTML.</li>
+                    <li>Experience with database management (MySQL, PostgreSQL)</li>
+                    <li>Design: Figma and Canva</li>
+                    <li>Problem-solving and algorithm design</li>
+                </ul>
+            </div>
+    
+            <div class="about-item interests">
+                <h3>Interests</h3>
+                <p>My goal is to contribute to projects that make a positive impact and continue growing as a developer. I'm excited about the future of technology and the opportunities it brings!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <div class="projects-list">
+            <div class="project-item">
+                <h3>Push Down Automaton Simulator</h3>
+                <img src="image/PDA.png" alt="Project 1 Image">
+                <p>This project simulates a Pushdown Automaton (PDA) for recognizing context-free languages like a^n b^n and a^n b^m c^n. 
+                It includes a graphical representation of state transitions and simulates the PDA’s operation, displaying state changes and stack manipulations for input strings. 
+                The project demonstrates the use of PDAs in language recognition through stack-based computation.</p>
+                <a href="https://github.com/Alopena/PushDownAutomata.git" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+    
+            <div class="project-item">
+                <h3>Improving the Magnetic Bubble Sort Algorithm</h3>
+                <img src="image/ResearchPaper.png" alt="Project 2 Image">
+                <p>This project aims to optimize the Magnetic Bubble Sort Algorithm (MBSA) for efficiently handling large datasets with redundancies. 
+                As data sizes grow in fields like data science and machine learning, efficient sorting becomes crucial. 
+                The research focuses on improving MBSA by reducing unnecessary comparisons and swaps, enhancing processing times and memory usage.
+                These improvements will make MBSA a more practical solution for managing large, complex datasets, benefiting industries dealing with big data and analytics.</p>
+                <a href="https://github.com/Alopena/MagneticBubbleSort.git" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+    
+            <div class="project-item">
+                <h3>Tower Defense Game</h3>
+                <img src="image/Defense.png" alt="Project 3 Image">
+                <p>This project is a tactical Tower Defense game developed using Unity. 
+                The game challenges players to strategically place towers along a path to prevent waves of enemies from reaching their destination. 
+                Featuring various types of towers and enemy units, the game emphasizes strategic thinking and resource management.</p>
+                <a href="https://github.com/Alopena/Tower-Defense.git" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+        
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/angelbert-lopena-2a044224b" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/angelbert.lopena" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/Alopena" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mwpkjybj" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    
+        <!-- Email Display -->
+        <div class="email-info">
+            <i class="fa-solid fa-envelope"></i> lopena.angelbert@gmail.com
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
