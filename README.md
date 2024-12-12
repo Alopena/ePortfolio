@@ -1,6 +1,6 @@
 **Description**
 
-This portfolio is a showcase of my skills, projects, and experience as a Computer Science student. It provides an overview of my background, skills, academic achievements, and various projects I have worked on. This portfolio demonstrates my proficiency in web development, problem-solving, and algorithm design, with a focus on delivering clean, responsive web experiences.
+This portfolio is a showcase of my skills, projects, and experience as a Computer Science student. It provides an overview of my background, skills, academic achievements, and various projects I have worked on.
 
 **Technologies Used**
 
